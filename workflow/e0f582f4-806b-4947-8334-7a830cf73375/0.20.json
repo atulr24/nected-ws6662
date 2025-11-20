@@ -1,0 +1,294 @@
+{
+ "entityType": "workflow",
+ "live": true,
+ "data": {
+  "testedAt": "2025-11-19T11:59:29.65Z",
+  "publishedAt": "2025-11-19T11:59:33.72Z",
+  "createdAt": "2025-11-19T11:34:54.511Z",
+  "updatedAt": "2025-11-19T11:59:33.727Z",
+  "isDeleted": false,
+  "entityId": "e0f582f4-806b-4947-8334-7a830cf73375",
+  "name": "TestWorkFlow",
+  "commitId": "commit-9d9f847e-12dc-45a7-9816-cc9f6996f455",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Forked from 0.10",
+   "description": "v1",
+   "timeStamp": "2025-11-19T11:59:33.714Z"
+  },
+  "startNode": "n_fCFns5",
+  "version": "0.20",
+  "description": "",
+  "trigger": {
+   "apiNode": "1"
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 341.046875,
+     "y": 0
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "name": {
+       "executedValue": "atul",
+       "name": "name",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "name": "atul"
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "d",
+      "durationValue": 0,
+      "authType": "private",
+      "cacheKeys": "",
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "name": "Trigger",
+     "runInLoop": {
+      
+     },
+     "blockName": "trigger",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 341.046875,
+     "y": 130
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_VtUqDb",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 341.046875,
+     "y": 410
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_8pYPFv",
+    "type": "setVarNode",
+    "data": {
+     "input": {
+      "key_0": {
+       "value": "Value",
+       "executedValue": "Value",
+       "name": "key_0",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "error": "",
+      "output": {
+       "key_0": "Value"
+      },
+      "resetOutput": {
+       
+      }
+     },
+     "settings": {
+      "errorContinue": false
+     },
+     "nodeType": "setVarNode",
+     "entity": "setVariableNode",
+     "entityId": "n_8pYPFv",
+     "status": "success",
+     "name": "SetVariable",
+     "runInLoop": {
+      
+     },
+     "blockName": "setVariable",
+     "testedAt": "2025-11-19T11:59:29.65Z"
+    }
+   },
+   {
+    "position": {
+     "x": 341.046875,
+     "y": 540
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_eHXz4I",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 341.046875,
+     "y": 205
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_fCFns5",
+    "type": "rule",
+    "data": {
+     "input": {
+      "name": {
+       "value": "",
+       "name": "name",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "error": "",
+      "action": null,
+      "output": [],
+      "ruleId": "31bcc11e-5a34-4f63-9a66-f89aa1c8d239",
+      "warnings": [],
+      "additionalOutput": {
+       
+      }
+     },
+     "settings": {
+      "timeout": 10,
+      "runAction": false,
+      "actionInSync": false,
+      "timeoutAsync": 20,
+      "errorContinue": false
+     },
+     "nodeType": "dtNode",
+     "entity": "rule",
+     "entityId": "31bcc11e-5a34-4f63-9a66-f89aa1c8d239",
+     "status": "success",
+     "name": "Rule1Master",
+     "runInLoop": {
+      
+     },
+     "blockName": "decisionTable",
+     "testedAt": "2025-11-19T11:59:29.65Z"
+    }
+   },
+   {
+    "position": {
+     "y": 335,
+     "x": 341.046875
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_ThNbKD",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_OgwJTP",
+    "source": "1",
+    "target": "n_VtUqDb",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "strokeWidth": 1,
+     "stroke": "gray"
+    },
+    "id": "e_686kOS",
+    "source": "n_8pYPFv",
+    "target": "n_eHXz4I",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_B9lSot",
+    "source": "n_ThNbKD",
+    "target": "n_8pYPFv",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_SCWF0c",
+    "source": "n_fCFns5",
+    "target": "n_ThNbKD",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_NEPyeD",
+    "source": "n_VtUqDb",
+    "target": "n_fCFns5",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-9d9f847e-12dc-45a7-9816-cc9f6996f455",
+   "entityType": "workflow",
+   "entityId": "e0f582f4-806b-4947-8334-7a830cf73375",
+   "entityVersion": "0.20",
+   "entityNodeId": "n_fCFns5",
+   "dependencyType": "rule",
+   "dependencyId": "31bcc11e-5a34-4f63-9a66-f89aa1c8d239",
+   "dependencyVersion": "0.20",
+   "isDeleted": false,
+   "createdAt": "2025-11-19T11:57:09.645139Z",
+   "updatedAt": "2025-11-19T11:59:33.723691Z"
+  }
+ ]
+}

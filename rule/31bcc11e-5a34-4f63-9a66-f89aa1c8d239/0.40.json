@@ -1,21 +1,23 @@
 {
  "entityType": "rule",
  "category": "decisionTable",
+ "live": true,
  "data": {
   "createdAt": "2025-11-19T11:28:03.067Z",
-  "updatedAt": "2025-11-20T06:04:19.194467Z",
+  "updatedAt": "2025-11-19T12:01:22.997Z",
   "isDeleted": false,
   "testedAt": "2025-11-19T12:01:18.643Z",
   "publishedAt": "2025-11-19T12:01:22.991Z",
   "entityId": "31bcc11e-5a34-4f63-9a66-f89aa1c8d239",
   "name": "Rule1Master",
-  "commitId": "commit-2b2ce1b2-d505-4e79-8bd6-9f811b6466bd",
-  "status": "draft",
-  "lastVersion": "0.40",
-  "isLive": false,
+  "commitId": "commit-f1f328f4-f091-4e55-a72f-6c02a8683b7a",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": true,
   "commitInfo": {
-   "title": "Forked from 0.40",
-   "timeStamp": "2025-11-20T06:04:19.193933432Z"
+   "title": "Forked from 0.30",
+   "description": "v3",
+   "timeStamp": "2025-11-19T12:01:22.99Z"
   },
   "customInput": {
    "name": {
@@ -116,7 +118,7 @@
   "firstCustomInput": "name",
   "description": "",
   "policy": "first",
-  "version": "draft",
+  "version": "0.40",
   "type": "decisionTable",
   "dataSetId": "109664ee-696c-4764-8312-8a898842bb8a",
   "settings": {
@@ -140,5 +142,20 @@
   },
   "isDemo": false,
   "schemaVersion": "0.1.1"
- }
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-f1f328f4-f091-4e55-a72f-6c02a8683b7a",
+   "entityType": "rule",
+   "entityId": "31bcc11e-5a34-4f63-9a66-f89aa1c8d239",
+   "entityVersion": "0.40",
+   "entityNodeId": "dataSet",
+   "dependencyType": "dataSet",
+   "dependencyId": "109664ee-696c-4764-8312-8a898842bb8a",
+   "dependencyVersion": "0.20",
+   "isDeleted": false,
+   "createdAt": "2025-11-19T12:01:04.054454Z",
+   "updatedAt": "2025-11-19T12:01:22.994859Z"
+  }
+ ]
 }

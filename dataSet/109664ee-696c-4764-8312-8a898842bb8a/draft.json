@@ -3,80 +3,80 @@
  "category": "dataSet",
  "data": {
   "createdAt": "2025-11-19T11:27:42.192Z",
-  "updatedAt": "2025-11-19T11:29:20.446132Z",
+  "updatedAt": "2025-11-19T11:49:31.480194Z",
   "isDeleted": false,
-  "publishedAt": "2025-11-19T11:29:20.434Z",
-  "testedAt": "2025-11-19T11:29:15.48Z",
+  "publishedAt": "2025-11-19T11:49:31.466Z",
+  "testedAt": "2025-11-19T11:49:27.293Z",
   "entityId": "109664ee-696c-4764-8312-8a898842bb8a",
   "name": "mongodb",
-  "commitId": "commit-42c2efe4-5694-4587-9ced-23de6d0aa49d",
+  "commitId": "commit-8c354cec-ca23-45c4-8d80-164d8121d7fd",
   "status": "published",
   "lastVersion": "draft",
   "isLive": true,
   "commitInfo": {
    "title": "Forked from 0.10",
    "description": "v2",
-   "timeStamp": "2025-11-19T11:29:20.432Z"
+   "timeStamp": "2025-11-19T11:49:31.464Z"
   },
   "fields": {
-   "Bool": {
-    "ColumnName": "Bool",
-    "DataType": "boolean",
-    "Order": 7,
-    "ExecutedValue": false
-   },
    "date": {
     "ColumnName": "date",
     "DataType": "dateTime",
-    "Order": 5,
+    "Order": 6,
     "ExecutedValue": "2025-11-01T05:49:56Z"
    },
    "name": {
     "ColumnName": "name",
     "DataType": "string",
-    "Order": 1,
+    "Order": 2,
     "ExecutedValue": "email@email.com"
    },
    "text": {
     "ColumnName": "text",
     "DataType": "json",
-    "Order": 4,
+    "Order": 5,
     "ExecutedValue": {
      "$cond": {
+      "then": "PositiveReview",
       "if": {
        "$eq": [
         "$Bool",
         true
        ]
       },
-      "else": "NegativeReview",
-      "then": "PositiveReview"
+      "else": "NegativeReview"
      }
     }
    },
    "email": {
     "ColumnName": "email",
     "DataType": "string",
-    "Order": 2,
+    "Order": 3,
     "ExecutedValue": "john.doe@example.com"
    },
    "Integer": {
     "ColumnName": "Integer",
     "DataType": "string",
-    "Order": 6,
+    "Order": 7,
     "ExecutedValue": "100"
    },
    "movie_id": {
     "ColumnName": "movie_id",
     "DataType": "objectid",
-    "Order": 3,
+    "Order": 4,
     "ExecutedValue": "573a1391f29313caabcd7da6"
    },
    "_id": {
     "ColumnName": "_id",
     "DataType": "objectid",
-    "Order": 8,
+    "Order": 1,
     "ExecutedValue": "5a9427648b0beebeb6957b51"
+   },
+   "Bool": {
+    "ColumnName": "Bool",
+    "DataType": "boolean",
+    "Order": 8,
+    "ExecutedValue": false
    }
   },
   "query": "db.comments.find({})",

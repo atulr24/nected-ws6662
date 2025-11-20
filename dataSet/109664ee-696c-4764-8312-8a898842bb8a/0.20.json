@@ -4,32 +4,44 @@
  "live": true,
  "data": {
   "createdAt": "2025-11-19T11:27:42.192Z",
-  "updatedAt": "2025-11-19T11:29:20.442Z",
+  "updatedAt": "2025-11-19T11:49:31.477Z",
   "isDeleted": false,
-  "publishedAt": "2025-11-19T11:29:20.434Z",
-  "testedAt": "2025-11-19T11:29:15.48Z",
+  "publishedAt": "2025-11-19T11:49:31.466Z",
+  "testedAt": "2025-11-19T11:49:27.293Z",
   "entityId": "109664ee-696c-4764-8312-8a898842bb8a",
   "name": "mongodb",
-  "commitId": "commit-6ac04a78-d446-47b7-bad1-5c1f9124fdb2",
+  "commitId": "commit-83408805-ebc0-44a5-ab6b-bab851fa6d2a",
   "status": "published",
   "lastVersion": "draft",
   "isLive": true,
   "commitInfo": {
    "title": "Forked from 0.10",
    "description": "v2",
-   "timeStamp": "2025-11-19T11:29:20.432Z"
+   "timeStamp": "2025-11-19T11:49:31.464Z"
   },
   "fields": {
+   "Bool": {
+    "ColumnName": "Bool",
+    "DataType": "boolean",
+    "Order": 8,
+    "ExecutedValue": false
+   },
+   "date": {
+    "ColumnName": "date",
+    "DataType": "dateTime",
+    "Order": 6,
+    "ExecutedValue": "2025-11-01T05:49:56Z"
+   },
    "name": {
     "ColumnName": "name",
     "DataType": "string",
-    "Order": 1,
+    "Order": 2,
     "ExecutedValue": "email@email.com"
    },
    "text": {
     "ColumnName": "text",
     "DataType": "json",
-    "Order": 4,
+    "Order": 5,
     "ExecutedValue": {
      "$cond": {
       "if": {
@@ -46,38 +58,26 @@
    "email": {
     "ColumnName": "email",
     "DataType": "string",
-    "Order": 2,
+    "Order": 3,
     "ExecutedValue": "john.doe@example.com"
    },
    "Integer": {
     "ColumnName": "Integer",
     "DataType": "string",
-    "Order": 6,
+    "Order": 7,
     "ExecutedValue": "100"
    },
    "movie_id": {
     "ColumnName": "movie_id",
     "DataType": "objectid",
-    "Order": 3,
+    "Order": 4,
     "ExecutedValue": "573a1391f29313caabcd7da6"
    },
    "_id": {
     "ColumnName": "_id",
     "DataType": "objectid",
-    "Order": 8,
+    "Order": 1,
     "ExecutedValue": "5a9427648b0beebeb6957b51"
-   },
-   "Bool": {
-    "ColumnName": "Bool",
-    "DataType": "boolean",
-    "Order": 7,
-    "ExecutedValue": false
-   },
-   "date": {
-    "ColumnName": "date",
-    "DataType": "dateTime",
-    "Order": 5,
-    "ExecutedValue": "2025-11-01T05:49:56Z"
    }
   },
   "query": "db.comments.find({})",
@@ -95,7 +95,7 @@
  },
  "dependencies": [
   {
-   "entityCommitId": "commit-6ac04a78-d446-47b7-bad1-5c1f9124fdb2",
+   "entityCommitId": "commit-83408805-ebc0-44a5-ab6b-bab851fa6d2a",
    "entityType": "dataSet",
    "entityId": "109664ee-696c-4764-8312-8a898842bb8a",
    "entityVersion": "0.20",
@@ -104,8 +104,8 @@
    "dependencyId": "a091252a-751d-4c23-bca2-84e6e5894f1e",
    "dependencyVersion": "live",
    "isDeleted": false,
-   "createdAt": "2025-11-19T11:29:00.8371Z",
-   "updatedAt": "2025-11-19T11:29:20.439056Z"
+   "createdAt": "2025-11-19T11:49:23.638308Z",
+   "updatedAt": "2025-11-19T11:49:31.472785Z"
   }
  ]
 }

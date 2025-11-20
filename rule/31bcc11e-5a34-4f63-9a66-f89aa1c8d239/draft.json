@@ -3,20 +3,20 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-11-19T11:28:03.067Z",
-  "updatedAt": "2025-11-19T11:29:40.069315Z",
+  "updatedAt": "2025-11-19T11:48:43.854728Z",
   "isDeleted": false,
-  "testedAt": "2025-11-19T11:29:35.758Z",
-  "publishedAt": "2025-11-19T11:29:40.058Z",
+  "testedAt": "2025-11-19T11:48:39.367Z",
+  "publishedAt": "2025-11-19T11:48:43.843Z",
   "entityId": "31bcc11e-5a34-4f63-9a66-f89aa1c8d239",
   "name": "Rule1Master",
-  "commitId": "commit-d043cbbb-ee4d-4265-bded-77ef08346901",
+  "commitId": "commit-4b13eb5d-6a87-4782-808b-18e38812875e",
   "status": "published",
   "lastVersion": "draft",
   "isLive": true,
   "commitInfo": {
-   "title": "Forked from 0.10",
+   "title": "Forked from 0.20",
    "description": "v2",
-   "timeStamp": "2025-11-19T11:29:40.057Z"
+   "timeStamp": "2025-11-19T11:48:43.842Z"
   },
   "customInput": {
    "name": {
@@ -51,14 +51,6 @@
   },
   "conditions": {
    "nodes": {
-    "rule_01": {
-     "operator": "and",
-     "nodeType": "group",
-     "children": [
-      "rule_02"
-     ],
-     "siblingIndex": 1
-    },
     "rule_02": {
      "value": "",
      "operator": "eq",
@@ -87,13 +79,21 @@
      "attribute": "name",
      "parent": "rule_02",
      "siblingIndex": 1
+    },
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02"
+     ],
+     "siblingIndex": 1
     }
    }
   },
   "firstCustomInput": "name",
   "description": "",
   "policy": "first",
-  "version": "0.20",
+  "version": "0.10",
   "type": "decisionTable",
   "dataSetId": "109664ee-696c-4764-8312-8a898842bb8a",
   "settings": {

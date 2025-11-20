@@ -4,20 +4,20 @@
  "live": true,
  "data": {
   "createdAt": "2025-11-19T11:28:03.067Z",
-  "updatedAt": "2025-11-19T11:28:39.193Z",
+  "updatedAt": "2025-11-19T11:48:43.849Z",
   "isDeleted": false,
-  "testedAt": "2025-11-19T11:28:35.296Z",
-  "publishedAt": "2025-11-19T11:28:39.187Z",
+  "testedAt": "2025-11-19T11:48:39.367Z",
+  "publishedAt": "2025-11-19T11:48:43.843Z",
   "entityId": "31bcc11e-5a34-4f63-9a66-f89aa1c8d239",
   "name": "Rule1Master",
-  "commitId": "commit-a31c75c9-11a9-4757-a74f-46ac6f4978df",
+  "commitId": "commit-16f8aeaf-e5ae-4afa-9cba-c660d41a4658",
   "status": "published",
   "lastVersion": "draft",
-  "isLive": false,
+  "isLive": true,
   "commitInfo": {
-   "title": "Created at 2025-11-19 11:28:03",
-   "description": "v1",
-   "timeStamp": "2025-11-19T11:28:39.185Z"
+   "title": "Forked from 0.20",
+   "description": "v2",
+   "timeStamp": "2025-11-19T11:48:43.842Z"
   },
   "customInput": {
    "name": {
@@ -109,7 +109,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": ""
+     "Unit": "d"
     },
     "CacheKeys": ""
    },
@@ -121,17 +121,17 @@
  },
  "dependencies": [
   {
-   "entityCommitId": "commit-a31c75c9-11a9-4757-a74f-46ac6f4978df",
+   "entityCommitId": "commit-16f8aeaf-e5ae-4afa-9cba-c660d41a4658",
    "entityType": "rule",
    "entityId": "31bcc11e-5a34-4f63-9a66-f89aa1c8d239",
    "entityVersion": "0.10",
    "entityNodeId": "dataSet",
    "dependencyType": "dataSet",
    "dependencyId": "109664ee-696c-4764-8312-8a898842bb8a",
-   "dependencyVersion": "live",
+   "dependencyVersion": "0.10",
    "isDeleted": false,
-   "createdAt": "2025-11-19T11:28:17.385311Z",
-   "updatedAt": "2025-11-19T11:28:39.190941Z"
+   "createdAt": "2025-11-19T11:46:41.606991Z",
+   "updatedAt": "2025-11-19T11:48:43.846887Z"
   }
  ]
 }
